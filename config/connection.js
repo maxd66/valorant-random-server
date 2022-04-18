@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    process.env.MONGODB_URI || "mongodb://localhost/valorant_random_db",
+    "mongodb+srv://mddunn66:madmax66@cluster0.ephon.mongodb.net/valorant-random?retryWrites=true&w=majority" ||
+      "mongodb://localhost/valorant_random_db",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
